@@ -8,7 +8,8 @@
 
 
 body {
-    font-family: "Petrona", serif;
+    
+    font-family: "poppins", serif;
 }
 
 a {
@@ -20,7 +21,8 @@ header {
     background-color: #0A0A0A;
     display: flex;
     justify-content: space-between;
-    padding: 1% 5%;
+    padding: 0.5% 5%;
+    font-family: "Petrona", serif;
 }
 
 .logo {
@@ -66,6 +68,7 @@ hr {
     background: url(../img/background/banner1_gradient.png);
     background-size: cover;
     background-position: center;
+
 }
 
 .title {
@@ -79,7 +82,7 @@ hr {
     color: #F0F0F0;
     font-size: 50px;
     text-transform: uppercase;
-    font-family: "poppins", serif;
+    
 }
 
 .title_detail {
@@ -95,4 +98,43 @@ hr {
     height: 3px;
     border: 0 ;
     background-color:  #F0F0F0;
+}
+
+
+.reels_container{
+    
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    margin: 0 20%;
+    width: auto;
+    justify-content: space-between;
+    
+}
+.reels{
+    padding: 0 0 50px 0;
+}
+.reels iframe{
+    width: 400px;
+    height: 200px;
+}
+
+.reels p{
+    color: #F0F0F0;
+    text-align: center;
+}
+
+.portfolio_section{
+    background: url(../img/background/bg_picture1.png);
+    
+}
+
+.game_soundtracks{
+    display: flex;
+
+}
+
+.card{
+}
+.card img{
+    width: 200px;
 }
