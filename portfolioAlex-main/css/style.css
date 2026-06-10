@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Petrona:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Petrona:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+}
+
+
+body {
+    font-family: "poppins", serif;
+}
+
+h2{
+    color: #F0F0F0;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: #F0F0F0;
+}
+
+/* ----- HEADER ----- */
+header {
+    background-color: #0A0A0A;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5% 5%;
+    font-family: "Petrona", serif;
+}
+
+/* -- LOGO -- */
+.logo {
+    width: fit-content;
+}
+
+.logo a {
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+}
+
+.logo h1 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.logo p {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+.logo hr {
+    height: 1px;
+    background-color: #F0F0F0;
+    border: none;
+}
+
+/* -- NAVBAR -- */
+.navbar {
+    margin: auto 0;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar a {
+    font-weight: 400;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 1px;
+    transition: .1s ease-out;
+}
+    .navbar a:hover{
+        background-color: #F0F0F0;
+        color: #0A0A0A;
+    }
+
+/* ----- TITLES ----- */
+.title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.title_detail {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: fit-content;
+}
+
+.title_detail hr {
+    width: 50px;
+    height: 3px;
+    border: 0;
+    background-color:  #F0F0F0;
+}
+
+/* ----- REELS -----*/
+:root{
+    --iframe_width: 480px;
+}
+
+.reels_section {
+    background-color: #0A0A0A;
+    background-image: url(../img/background/banner1_gradient.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    font-size: 1.2em;
+}
+
+.reels_container{
+    display: grid;
+    grid-template-columns: repeat(2, var(--iframe_width));
+    margin: 0 20%;
+    width: auto;
+    justify-content: space-between;
+    
+}
+
+.reels{
+    padding: 0 0 35px 0;
+}
+.reels iframe{
+    width: var(--iframe_width);
+    aspect-ratio: 1.78 / 1;
+}
+
+.reels p{
+    color: #F0F0F0;
+    text-align: center;
+}
+
+/* ----- PORTIFOLIO ----- */
+.portfolio_section{
+    background: url(../img/background/bg_picture1.png);
+    
+}
+
+.game_soundtracks{
+    display: flex;
+
+}
+
+.card{
+}
+.card img{
+    width: 200px;
+}
