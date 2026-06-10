@@ -8,8 +8,13 @@
 
 
 body {
-    
     font-family: "poppins", serif;
+}
+
+h2{
+    color: #F0F0F0;
+    font-size: 50px;
+    text-transform: uppercase;
 }
 
 a {
@@ -17,6 +22,7 @@ a {
     color: #F0F0F0;
 }
 
+/* ----- HEADER ----- */
 header {
     background-color: #0A0A0A;
     display: flex;
@@ -25,6 +31,7 @@ header {
     font-family: "Petrona", serif;
 }
 
+/* -- LOGO -- */
 .logo {
     width: fit-content;
 }
@@ -46,10 +53,13 @@ header {
     font-weight: 200;
 }
 
-hr {
-    height: solid 1px;
+.logo hr {
+    height: 1px;
+    background-color: #F0F0F0;
+    border: none;
 }
 
+/* -- NAVBAR -- */
 .navbar {
     margin: auto 0;
 }
@@ -62,33 +72,26 @@ hr {
 .navbar a {
     font-weight: 400;
     font-size: 20px;
+    padding: 10px;
+    border-radius: 1px;
+    transition: .1s ease-out;
 }
+    .navbar a:hover{
+        background-color: #F0F0F0;
+        color: #0A0A0A;
+    }
 
-.reels_section {
-    background: url(../img/background/banner1_gradient.png);
-    background-size: cover;
-    background-position: center;
-
-}
-
+/* ----- TITLES ----- */
 .title {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 30px;
-}
-
-.title h2 {
-    color: #F0F0F0;
-    font-size: 50px;
-    text-transform: uppercase;
-    
+    padding: 25px;
 }
 
 .title_detail {
     display: flex;
     gap: 10px;
-    margin: 10px;
     align-items: center;
     width: fit-content;
 }
@@ -96,26 +99,39 @@ hr {
 .title_detail hr {
     width: 50px;
     height: 3px;
-    border: 0 ;
+    border: 0;
     background-color:  #F0F0F0;
 }
 
+/* ----- REELS -----*/
+:root{
+    --iframe_width: 480px;
+}
+
+.reels_section {
+    background-color: #0A0A0A;
+    background-image: url(../img/background/banner1_gradient.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    font-size: 1.2em;
+}
 
 .reels_container{
-    
     display: grid;
-    grid-template-columns: repeat(2, 400px);
+    grid-template-columns: repeat(2, var(--iframe_width));
     margin: 0 20%;
     width: auto;
     justify-content: space-between;
     
 }
+
 .reels{
-    padding: 0 0 50px 0;
+    padding: 0 0 35px 0;
 }
 .reels iframe{
-    width: 400px;
-    height: 200px;
+    width: var(--iframe_width);
+    aspect-ratio: 1.78 / 1;
 }
 
 .reels p{
@@ -123,6 +139,7 @@ hr {
     text-align: center;
 }
 
+/* ----- PORTIFOLIO ----- */
 .portfolio_section{
     background: url(../img/background/bg_picture1.png);
     
