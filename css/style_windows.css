@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Petrona:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Petrona:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+}
+
+
+body {
+    font-family: "poppins", serif;
+    background-color: #0A0A0A;
+    color: #F0F0F0;
+
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+main{
+    width: 60%;
+    margin: auto;
+    border: 1px solid #F0F0F0;
+    padding: 3em 4em;
+}
+
+.title{
+    text-align: center;
+}
+
+.title h1{
+    color: #F0F0F0;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em;
+    margin-top: 3.5em;
+}
+
+.cover_img{
+    aspect-ratio: 1 / 1;
+    width: 400px;
+    object-fit: contain;
+}
+
+.content article{
+    padding: 0 3em;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main_sentence{
+    font-weight: 200;
+    text-align: center;
+}
+
+.description{
+    text-align: justify;
+}
+
+.info a{
+    color: #F0F0F0
+}
+
+.links{
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.links img{
+    aspect-ratio: 1 / 1;
+    width: 50px;
+    transition: transform .2s ease-out;
+}
+    .links img:hover{
+        transform: scale(1.1);
+    }
+
+
+.return_btn{
+    text-align: center;
+    margin-top: 3em;
+}
+
+.return_btn a{
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #F0F0F0;
+    padding: .3em .5em;
+    border-radius: 2px;
+    transition: .2s ease-out;
+}
+    .return_btn a:hover{
+        background-color: #F0F0F0;
+        color: #0A0A0A;
+    }
