@@ -105,7 +105,7 @@ header {
 
 /* ----- REELS -----*/
 :root{
-    --iframe_width: 480px;
+    --iframe_width: min(480px, 90vw);
 }
 
 .reels_section {
@@ -119,10 +119,10 @@ header {
 
 .reels_container{
     display: grid;
-    grid-template-columns: repeat(2, var(--iframe_width));
-    margin: 0 20%;
-    width: auto;
-    justify-content: space-between;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: min(960px, 90vw);
+    margin: 0 auto;
+    gap: 20px;
     
 }
 
@@ -131,6 +131,7 @@ header {
 }
 .reels iframe{
     width: var(--iframe_width);
+    max-width: 100%;
     aspect-ratio: 1.78 / 1;
 }
 
@@ -141,8 +142,7 @@ header {
 
 /* ----- PORTIFOLIO ----- */
 .portfolio_section{
-    background: url(../img/background/bg_picture1.png);
-    
+    background: url(../img/background/bg_picture1.png); 
 }
 
 .game_soundtracks{
@@ -151,6 +151,7 @@ header {
 }
 
 .card{
+
 }
 .card img{
     width: 200px;
