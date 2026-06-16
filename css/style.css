@@ -17,7 +17,7 @@ h2 {
     text-transform: uppercase;
 }
 
-h3{
+h3 {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 30px;
@@ -28,7 +28,9 @@ a {
     color: #F0F0F0;
 }
 
-/* ----- HEADER ----- */
+/* -------------------------------------------------- 
+    HEADER 
+-------------------------------------------------- */
 header {
     background-color: #0A0A0A;
     display: flex;
@@ -89,12 +91,15 @@ header {
     color: #0A0A0A;
 }
 
-/* ----- TITLES ----- */
+/* -------------------------------------------------- 
+    TITLES 
+-------------------------------------------------- */
 .title {
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 30px;
+    margin-bottom: 10px;
 }
 
 .title_detail {
@@ -111,7 +116,9 @@ header {
     background-color: #F0F0F0;
 }
 
-/* ----- REELS -----*/
+/* --------------------------------------------------
+    REELS 
+--------------------------------------------------*/
 :root {
     --iframe_width: min(480px, 90vw);
 }
@@ -147,11 +154,13 @@ header {
     text-align: center;
 }
 
-/* ----- PORTIFOLIO ----- */
+/* -------------------------------------------------- 
+    PORTIFOLIO 
+-------------------------------------------------- */
 .card_and_credits {
     background-image:
-    linear-gradient(rgba(10, 10, 10, 0.6)), 
-    url("../img/background/bg_picture1_gradient.png");
+        linear-gradient(rgba(10, 10, 10, 0.6)),
+        url("../img/background/bg_picture1_gradient.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
@@ -159,7 +168,8 @@ header {
 }
 
 /*-- ACTIVE PROJECTS --*/
-.game_soundtracks, .active_projects{
+.game_soundtracks,
+.active_projects {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -176,7 +186,7 @@ header {
     gap: 20px;
 }
 
-.card_container_cards{
+.card_container_cards {
     display: flex;
     justify-content: space-between;
 }
@@ -185,71 +195,106 @@ header {
     width: 220px;
     transition: transform .2s ease-out;
 }
-    .card:hover{
-        transform: scale(1.05);
-    }
+
+.card:hover {
+    transform: scale(1.05);
+}
 
 .card img {
     width: 220px;
 }
 
-.card legend{
+.card legend {
     text-align: center;
     overflow-wrap: break-word;
 }
 
 /*-- CREDITS --*/
-.credits_section, .credits_card, .credits_card ul{
+.credits_section,
+.credits_card,
+.credits_card ul {
     display: flex;
     flex-direction: column;
-    gap: 1.5em;
+    gap: 2em;
 }
 
-.credits_section{
-    width: 50%;
+.credits_section {
+    max-width: min(960px, 90vw);
     margin: auto;
     text-align: center;
 }
 
-.credits_section h3{
+.credits_section h3 {
     text-align: left;
+    
 }
 
-.credits_card{
+.credits_card {
     border: 1px solid #F0F0F0;
-    border-radius: 10px;
-    padding: 2em 0; 
+    border-radius: 6px;
+    padding: 2em 0;
+    
 }
 
-.credits_card ul{
+.credits_card ul {
     list-style: none;
 }
 
-.credits_card_title{
+.credits_card_title {
     font-weight: bold;
     font-size: larger;
+    
 }
 
-.credits_card a, #full_portfolio_link{
+.credits_card a,
+#full_portfolio_link {
     text-decoration: underline;
 }
 
-.credits_card a{
+.credits_card a {
     padding: 3px 10px;
     border-radius: 2px;
     transition: .1s ease-out;
 }
-    .credits_card a:hover{
-        background-color: #F0F0F0;
-        color: #0A0A0A;
-    }
 
-#full_portfolio_link{
+.credits_card a:hover {
+    background-color: #F0F0F0;
+    color: #0A0A0A;
+}
+
+#full_portfolio_link {
     text-align: center;
     margin-top: 1em;
 }
 
-#banner2{
+#banner2 {
     width: 100%;
     margin-top: 7em;
+}
+
+/* --------------------------------------------------
+    About 
+--------------------------------------------------*/
+
+.about_section{
+    background-color: #0A0A0A;
+   
+}
+.about_content{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.about_content_img{
+    width: 35%;
+}
+.about_content_img img{
+    width: 100%;
+}
+.about_txt{
+    width: 50%;
+}
+
+#about_txt_title{
+    font-size: 20px;
 }
