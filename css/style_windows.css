@@ -80,12 +80,12 @@ main{
 .links img{
     aspect-ratio: 1 / 1;
     width: 50px;
+    border-radius: 10px;
     transition: transform .2s ease-out;
 }
     .links img:hover{
         transform: scale(1.1);
     }
-
 
 .return_btn{
     text-align: center;
