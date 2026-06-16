@@ -11,7 +11,7 @@ body {
     font-family: "poppins", serif;
 }
 
-h2{
+h2 {
     color: #F0F0F0;
     font-size: 50px;
     text-transform: uppercase;
@@ -76,17 +76,18 @@ header {
     border-radius: 1px;
     transition: .1s ease-out;
 }
-    .navbar a:hover{
-        background-color: #F0F0F0;
-        color: #0A0A0A;
-    }
+
+.navbar a:hover {
+    background-color: #F0F0F0;
+    color: #0A0A0A;
+}
 
 /* ----- TITLES ----- */
 .title {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 25px;
+    padding: 30px;
 }
 
 .title_detail {
@@ -100,11 +101,11 @@ header {
     width: 50px;
     height: 3px;
     border: 0;
-    background-color:  #F0F0F0;
+    background-color: #F0F0F0;
 }
 
 /* ----- REELS -----*/
-:root{
+:root {
     --iframe_width: min(480px, 90vw);
 }
 
@@ -117,42 +118,80 @@ header {
     font-size: 1.2em;
 }
 
-.reels_container{
+.reels_container {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     max-width: min(960px, 90vw);
     margin: 0 auto;
     gap: 20px;
-    
+
 }
 
-.reels{
+.reels {
     padding: 0 0 35px 0;
 }
-.reels iframe{
+
+.reels iframe {
     width: var(--iframe_width);
     max-width: 100%;
     aspect-ratio: 1.78 / 1;
 }
 
-.reels p{
+.reels p {
     color: #F0F0F0;
     text-align: center;
 }
 
 /* ----- PORTIFOLIO ----- */
-.portfolio_section{
-    background: url(../img/background/bg_picture1.png); 
+.card_and_credits {
+        background:url("../img/background/bg_picture1.png");
+
+    background-size: cover;
+    background-position: center;
+    background-color: #0A0A0A;
+
 }
 
-.game_soundtracks{
+.game_soundtracks, .active_projects {
     display: flex;
-
+    justify-content: center;
+    gap: 20px;
+    max-width: min(960px, 90vw);
+    margin: 0 auto;
+    padding-bottom: 30px;
 }
 
-.card{
+
+.card_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+
 
 }
-.card img{
-    width: 200px;
+.card_container_texto{
+    color: #F0F0F0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
 }
+
+.card_container_cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 220px; 
+}
+.card img {
+    width: 220px;
+}
+
+.card legend{
+    text-align: center;
+ overflow-wrap: break-word;
+}
+
