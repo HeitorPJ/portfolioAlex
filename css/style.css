@@ -265,6 +265,7 @@ header {
 #full_portfolio_link {
     text-align: center;
     margin-top: 1em;
+    transition: .1s ease-out;
 }
 
 #banner2 {
@@ -273,28 +274,42 @@ header {
 }
 
 /* --------------------------------------------------
-    About 
+    ABOUT 
 --------------------------------------------------*/
 
 .about_section{
     background-color: #0A0A0A;
-   
+    padding-bottom: 3em;
 }
+
 .about_content{
     display: flex;
     justify-content: center;
     gap: 30px;
 }
+
 .about_content_img{
-    width: 35%;
+    width: 25%;
 }
+
 .about_content_img img{
     width: 100%;
 }
+
 .about_txt{
-    width: 50%;
+    width: 35%;
+    height: 100%;
+}
+
+.about_txt_content{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: 1.5em;
+    margin-top: 1em;
+    font-size: 18px;
 }
 
 #about_txt_title{
-    font-size: 20px;
+    font-size: 30px;
 }
