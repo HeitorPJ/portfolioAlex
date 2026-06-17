@@ -231,7 +231,8 @@ footer{
 
 /*-- ACTIVE PROJECTS --*/
 .game_soundtracks,
-.active_projects {
+.active_projects,
+.other_medias{
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -387,4 +388,14 @@ footer{
     display: grid;
     grid-template-columns: repeat(auto-fit, 220px);
     gap: 3em;
+}
+
+/* -- CREDITS -- */
+.dropdown_content{
+    display: none;
+    transition: display .2s ease;
+}
+
+.dropdown_composer:hover .dropdown_content_composer{
+    display: block;
 }
