@@ -10,6 +10,7 @@
 body {
     font-family: "poppins", serif;
     color: #F0F0F0;
+    background-color: #0A0A0A;
 }
 
 h2 {
@@ -32,7 +33,6 @@ a {
     HEADER 
 -------------------------------------------------- */
 header {
-    background-color: #0A0A0A;
     display: flex;
     justify-content: space-between;
     padding: 0.5% 5%;
@@ -187,7 +187,6 @@ footer{
 }
 
 .reels_section {
-    background-color: #0A0A0A;
     background-image: url(../img/background/banner1_gradient.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -228,7 +227,6 @@ footer{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
-    background-color: #0A0A0A;
 }
 
 /*-- ACTIVE PROJECTS --*/
@@ -346,7 +344,6 @@ footer{
 --------------------------------------------------*/
 
 .about_section{
-    background-color: #0A0A0A;
     padding-bottom: 3em;
 }
 
@@ -386,3 +383,8 @@ footer{
 /* --------------------------------------------------
                 PORTFOLIO PAGE 
 --------------------------------------------------*/
+.card_container_grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 220px);
+    gap: 3em;
+}
