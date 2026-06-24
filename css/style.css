@@ -159,6 +159,14 @@ footer {
     font-size: 20px;
 }
 
+.footer_icons img{
+    transition: transform .2s ease-out;
+}
+
+.footer_icons img:hover{
+    transform: scale(1.1);
+}
+
 .footer_icons_media,
 .footer_icons_streaming {
     display: grid;
@@ -302,10 +310,6 @@ footer {
 /* --------------------------------------------------
     REELS 
 --------------------------------------------------*/
-:root {
-    --iframe_width: min(480px, 90vw);
-}
-
 .reels_section {
     background-image: url(../img/background/banner1_gradient.png);
     background-size: contain;
@@ -499,16 +503,24 @@ footer {
     transition: .1s ease-out;
 }
 
-.credits_card a:hover {
+#full_portfolio_link {
+    text-align: center;
+    margin-top: 1em;
+}
+
+#full_portfolio_link a{
+    padding: .3em .5em;
+    border-radius: 5px;
+    transition: .1s ease-out;
+}
+
+
+#full_portfolio_link a:hover,
+.credits_card a:hover{
     background-color: #F0F0F0;
     color: #0A0A0A;
 }
 
-#full_portfolio_link {
-    text-align: center;
-    margin-top: 1em;
-    transition: .1s ease-out;
-}
 
 #banner2 {
     width: 100%;
