@@ -30,7 +30,7 @@ main{
 
 .title h1{
     color: #F0F0F0;
-    font-size: 50px;
+    font-size: 3.125em;
     text-transform: uppercase;
 }
 
@@ -43,7 +43,7 @@ main{
 
 .cover_img{
     aspect-ratio: 1 / 1;
-    width: 400px;
+    width: 40%;
     object-fit: contain;
 }
 
@@ -104,3 +104,9 @@ main{
         background-color: #F0F0F0;
         color: #0A0A0A;
     }
+
+/* ----- RESPONSIVIDADE ----- */
+img{
+    max-width: 100%;
+    height: auto;
+}
