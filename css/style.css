@@ -393,12 +393,17 @@ footer {
 .card_container_grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, 220px);
+    flex-wrap: wrap;
 
 }
 
 .card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     width: 220px;
     transition: transform .2s ease-out;
+    text-align: center;
 }
 
 .card:hover {
@@ -406,12 +411,12 @@ footer {
 }
 
 .card img {
+    object-fit: cover;
     width: 220px;
     height: auto;
 }
 
 .card legend {
-    text-align: center;
     overflow-wrap: break-word;
 }
 
