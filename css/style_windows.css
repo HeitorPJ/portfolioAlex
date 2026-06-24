@@ -17,37 +17,43 @@ body {
     align-items: center;
 }
 
-main{
-    width: 60%;
+main {
+    width: 70%;
     margin: auto;
     border: 1px solid #F0F0F0;
-    padding: 3em 4em;
+    padding: 3% 4%;
 }
 
-.title{
+.title {
     text-align: center;
-}
-
-.title h1{
-    color: #F0F0F0;
-    font-size: 3.125em;
     text-transform: uppercase;
+    color: #F0F0F0;
 }
 
-.content{
+.title h1 {
+    font-size: clamp(20px, 2.8vw, 50px);
+}
+
+.title h2 {
+    font-size: clamp(13px, 2vw, 20px);
+    width: 95%;
+    margin: auto;
+}
+
+.content {
     display: flex;
     justify-content: center;
-    font-size: 1.2em;
+    font-size: clamp(10px, 1.3vw, 20px);
     margin-top: 3.5em;
 }
 
-.cover_img{
+.cover_img {
     aspect-ratio: 1 / 1;
     width: 40%;
     object-fit: contain;
 }
 
-.content article{
+.content article {
     padding: 0 3em;
     width: 70%;
     display: flex;
@@ -55,58 +61,112 @@ main{
     justify-content: space-between;
 }
 
-.main_sentence{
+.main_sentence {
     font-weight: 200;
     text-align: center;
 }
 
-.description{
+.description {
     text-align: justify;
 }
 
-.info a{
+.info a {
     color: #F0F0F0
 }
 
-.links{
+.links {
     list-style: none;
     padding: 0;
     margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 1.5em;
     width: 40%;
 }
 
-.links img{
+.links img {
     aspect-ratio: 1 / 1;
-    width: 50px;
+    width: 100%;
     border-radius: 10px;
     transition: transform .2s ease-out;
 }
-    .links img:hover{
-        transform: scale(1.1);
-    }
 
-.return_btn{
+.links img:hover {
+    transform: scale(1.1);
+}
+
+.return_btn {
     text-align: center;
     margin-top: 3em;
 }
 
-.return_btn a{
-    font-size: 1.5em;
+.return_btn a {
+    font-size: clamp(10px, 1.7vw, 24px);
     text-decoration: none;
     color: #F0F0F0;
     padding: .3em .5em;
     border-radius: 2px;
     transition: .2s ease-out;
 }
-    .return_btn a:hover{
-        background-color: #F0F0F0;
-        color: #0A0A0A;
-    }
+
+.return_btn a:hover {
+    background-color: #F0F0F0;
+    color: #0A0A0A;
+}
 
 /* ----- RESPONSIVIDADE ----- */
-img{
-    max-width: 100%;
-    height: auto;
+@media screen and (max-width: 1000px) {
+    main {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    main {
+        padding: 3% 0;
+    }
+
+    .title h1 {
+        color: #F0F0F0;
+        font-size: clamp(20px, 5.5vw, 50px);
+        text-transform: uppercase;
+    }
+
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5em;
+        font-size: clamp(10px, 1.8vw, 20px);
+    }
+
+    .content img {
+        width: 60%;
+        margin-top: -2em;
+    }
+
+    .content article {
+        gap: 2.5em;
+        width: 85%;
+    }
+
+    .links img {
+        width: 100%;
+    }
+
+    .return_btn a {
+        font-size: clamp(10px, 3vw, 24px);
+        margin-top: -5em;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .links{
+        margin-top: 1.5em;
+        gap: 2.5em;
+    }
+    
+    .links img{
+        width: 35px;
+    }
 }
