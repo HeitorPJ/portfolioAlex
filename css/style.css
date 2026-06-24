@@ -91,63 +91,183 @@ header {
     color: #0A0A0A;
 }
 
+@media screen and (max-width: 880px) {
+    .logo h1 {
+        font-size: 25px;
+    }
+
+    .logo p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .navbar a {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5em;
+        padding: 1em 0;
+    }
+
+    .navbar ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        flex-wrap: wrap;
+    }
+}
+
 
 /* --------------------------------------------------
     FOOTER
 --------------------------------------------------*/
 
-footer{
+footer {
     background-image: linear-gradient(to bottom, rgba(10, 10, 10, 1), rgba(10, 10, 10, 0.6)), url(../img/background/banner1.png);
     background-size: cover;
     padding: 100px;
 }
 
-.footer_container{
+.footer_container {
     display: flex;
     justify-content: center;
     gap: 80px;
 }
 
-.footer_icons{
+.footer_icons {
     display: flex;
     gap: 80px;
 }
-.footer_icons_media_container, .footer_icons_streaming_container{
+
+.footer_icons_media_container,
+.footer_icons_streaming_container {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
-.footer_icons p{
+
+.footer_icons p {
     text-transform: uppercase;
     text-align: center;
     font-size: 20px;
 }
-.footer_icons_media, .footer_icons_streaming{
+
+.footer_icons_media,
+.footer_icons_streaming {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-    
+
 
 }
-.footer_icons_media img, .footer_icons_streaming img{
+
+.footer_icons_media img,
+.footer_icons_streaming img {
     border-radius: 10px;
 }
 
-#footer_division{
+#footer_division {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
-#footer_division hr{
+
+#footer_division hr {
     width: 2px;
     height: 80px;
     background-color: #F0F0F0;
     border: none;
-    
+
 }
-.footer_email_text{
+
+.footer_email_text {
     font-size: 20px;
+}
+
+@media screen and (max-width: 1010px) {
+    .footer_icons img {
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    footer {
+        padding: 60px;
+    }
+
+    .footer_container {
+        gap: 40px;
+    }
+
+    .footer_icons {
+        gap: 60px;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    footer p {
+        font-size: 15px;
+    }
+
+    .footer_container {
+        gap: 30px;
+    }
+
+    .footer_icons {
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .footer_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer_division {
+        flex-direction: row;
+        gap: 3em;
+    }
+
+    #footer_division hr {
+        rotate: 90deg;
+    }
+
+    footer p {
+        font-size: 20px;
+    }
+
+    .footer_container {
+        gap: 10px;
+    }
+
+    .footer_icons {
+        gap: 80px;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    .footer_icons {
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .footer_icons {
+        flex-direction: column;
+    }
+
+    .footer_email_text p{
+        font-size: 17px;
+    }
 }
 
 
@@ -229,12 +349,12 @@ footer{
     background-position: top;
 }
 
-.main_portfolio{
-    background-image: 
+.main_portfolio {
+    background-image:
         linear-gradient(rgba(10, 10, 10, 0.3)),
         url(../img/background/bg_picture2_gradient.png);
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     background-size: contain;
     background-attachment: fixed;
 }
@@ -242,7 +362,7 @@ footer{
 /*-- ACTIVE PROJECTS --*/
 .game_soundtracks,
 .active_projects,
-.other_medias{
+.other_medias {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -266,10 +386,10 @@ footer{
     row-gap: 2em;
 }
 
-.card_container_grid{
+.card_container_grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, 220px);
-    
+
 }
 
 .card {
@@ -292,40 +412,40 @@ footer{
 }
 
 /*-- CREDITS PORTIFOLIO--*/
-.full_credits{
+.full_credits {
     display: block;
     max-width: min(960px, 90vw);
     margin: 0 auto;
     padding-bottom: 30px;
 }
 
-.full_credits h3{
+.full_credits h3 {
     margin-bottom: 1em;
 }
 
 .dropdown_composer,
 .dropdown_arranger,
-.dropdown_audioeng{
+.dropdown_audioeng {
     margin-bottom: 1em;
 }
 
-.dropdown_content{
+.dropdown_content {
     display: none;
     transition: display .2s ease;
     margin-top: 0.5em;
 }
 
-.dropdown{
+.dropdown {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
 }
 
-.dropdown_composer:hover .dropdown_content_composer, 
+.dropdown_composer:hover .dropdown_content_composer,
 .dropdown_arranger:hover .dropdown_content_arranger,
 .dropdown_audioeng:hover .dropdown_content_audioeng,
-.dropdown_articles:hover .dropdown_content_articles{
+.dropdown_articles:hover .dropdown_content_articles {
     display: block;
 }
 
@@ -348,14 +468,14 @@ footer{
 
 .credits_section h3 {
     text-align: left;
-    
+
 }
 
 .credits_card {
     border: 1px solid #F0F0F0;
     border-radius: 6px;
     padding: 2em 0;
-    
+
 }
 
 .credits_card ul {
@@ -365,7 +485,7 @@ footer{
 .credits_card_title {
     font-weight: bold;
     font-size: larger;
-    
+
 }
 
 .credits_card a,
@@ -400,30 +520,30 @@ footer{
     ABOUT 
 --------------------------------------------------*/
 
-.about_section{
+.about_section {
     padding-bottom: 3em;
 }
 
-.about_content{
+.about_content {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
 
-.about_content_img{
+.about_content_img {
     width: 25%;
 }
 
-.about_content_img img{
+.about_content_img img {
     width: 100%;
 }
 
-.about_txt{
+.about_txt {
     width: 35%;
     height: 100%;
 }
 
-.about_txt_content{
+.about_txt_content {
     display: flex;
     flex-direction: column;
     text-align: justify;
@@ -432,6 +552,6 @@ footer{
     font-size: 18px;
 }
 
-#about_txt_title{
+#about_txt_title {
     font-size: 30px;
 }
