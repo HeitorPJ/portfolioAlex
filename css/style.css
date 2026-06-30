@@ -401,7 +401,7 @@ footer {
     object-fit: cover;
     width: 220px;
     height: auto;
-    box-shadow: -7px 7px 15px rgba(0, 0, 0, 0.6);
+    /* box-shadow: -7px 7px 15px rgba(0, 0, 0, 0.6); */
 }
 
 .card legend {
@@ -607,7 +607,7 @@ footer {
     }
 
     .card_container_grid {
-        grid-template-columns: repeat(2, 220px);
+        grid-template-columns: repeat(auto-fit, 220px);
     }
 
     .card_container h3,
