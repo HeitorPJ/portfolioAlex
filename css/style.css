@@ -130,21 +130,23 @@ footer {
         url(../img/background/banner1.png);
     background-size: cover;
     padding: 60px 20px;
+   
 }
 
 .footer_container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 60px;
-    max-width: 960px;
+    max-width: min(960px, 90vw);
     margin: 0 auto;
 }
 
 /* Grupos de ícones (social + streaming lado a lado) */
 .footer_icons {
     display: flex;
-    gap: 50px;
+    justify-content: space-between;
+    width: 45%;
 }
 
 .footer_icons_media_container,
@@ -206,9 +208,7 @@ footer {
 }
 
 @media screen and (max-width: 820px) {
-    .footer_container {
-        gap: 40px;
-    }
+   
 
     .footer_icons_media img,
     .footer_icons_streaming img {
