@@ -92,12 +92,19 @@ header {
 }
 
 @media screen and (max-width: 880px) {
-    .logo h1 { font-size: 25px; }
-    .logo p  { font-size: 20px; }
+    .logo h1 {
+        font-size: 25px;
+    }
+
+    .logo p {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 800px) {
-    .navbar a { font-size: 17px; }
+    .navbar a {
+        font-size: 17px;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -119,8 +126,8 @@ header {
    FOOTER
 ================================================== */
 footer {
-    background-image: linear-gradient(to bottom, rgba(10,10,10,1), rgba(10,10,10,0.6)),
-                      url(../img/background/banner1.png);
+    background-image: linear-gradient(to bottom, rgba(10, 10, 10, 1), rgba(10, 10, 10, 0.6)),
+        url(../img/background/banner1.png);
     background-size: cover;
     padding: 60px 20px;
 }
@@ -194,7 +201,7 @@ footer {
     text-align: center;
 }
 
-.footer_email_text p + p {
+.footer_email_text p+p {
     margin-top: 6px;
 }
 
@@ -290,11 +297,11 @@ footer {
 }
 
 .reels {
-    padding: 0 0 35px 0;
+    padding-bottom: 35px;
 }
 
 .reels iframe {
-    width: var(--iframe_width);
+    width: var(960px);
     max-width: 100%;
     aspect-ratio: 1.78 / 1;
 }
@@ -304,11 +311,30 @@ footer {
 }
 
 /* ==================================================
+   REPONSIVIDADE REELS
+================================================== */
+@media screen and (max-width: 1000px) {
+    .reels_container {
+        gap: 10px 40px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .reels_container {
+        display: block;
+    }
+
+    .reels {
+        padding-bottom: 3em;
+    }
+}
+
+/* ==================================================
    PORTFÓLIO
 ================================================== */
 .card_and_credits {
     background-image:
-        linear-gradient(rgba(10,10,10,0.6)),
+        linear-gradient(rgba(10, 10, 10, 0.6)),
         url("../img/background/bg_picture1_gradient.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -317,7 +343,7 @@ footer {
 
 .main_portfolio {
     background-image:
-        linear-gradient(rgba(10,10,10,0.3)),
+        linear-gradient(rgba(10, 10, 10, 0.3)),
         url(../img/background/bg_picture2_gradient.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -437,6 +463,7 @@ footer {
 
 .credits_card ul {
     list-style: none;
+    padding: 0;
 }
 
 .credits_card_title {
@@ -521,7 +548,6 @@ footer {
     text-align: justify;
     gap: 1.5em;
     margin-top: 1em;
-    font-size: 18px;
 }
 
 #about_txt_title {
@@ -556,6 +582,13 @@ footer {
     }
 }
 
+@media screen and (min-width: 800px) and (max-width: 1064px) {
+    .about_content_img img {
+        height: 400px;
+        object-fit: cover;
+    }
+}
+
 @media screen and (max-width: 922px) {
     .card_container_cards {
         justify-content: center;
@@ -564,7 +597,7 @@ footer {
     }
 
     .card_container_grid {
-        grid-template-columns: repeat(auto-fit, 220px);
+        grid-template-columns: repeat(2, 220px);
     }
 
     .card_container h3,
@@ -583,18 +616,22 @@ footer {
     }
 
     .principal {
-        display: block;
+        flex-wrap: wrap;
         margin: 0 auto;
     }
 
     .card {
         margin-bottom: 20px;
     }
-
-    
 }
 
-@media screen and (max-width: 1064px){
+@media screen and (min-width: 1065px) {
+    .about_txt_content {
+        font-size: clamp(13px, 1vw, 18px);
+    }
+}
+
+@media screen and (max-width: 1064px) {
     .about_content {
         flex-direction: column;
         margin: 0 auto;
@@ -608,5 +645,11 @@ footer {
     .about_txt {
         width: 80%;
         margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    #about_txt_title {
+        font-size: clamp(1.3em, 1vw, 1.5em);
     }
 }
