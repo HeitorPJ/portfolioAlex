@@ -246,6 +246,11 @@ footer {
         gap: 30px;
     }
 
+    .footer_icons_media,
+    .footer_icons_streaming {
+        gap: 20px 35px;
+    }
+
     .footer_icons_media img,
     .footer_icons_streaming img {
         width: 42px;
