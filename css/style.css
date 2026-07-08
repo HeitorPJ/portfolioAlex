@@ -130,7 +130,7 @@ footer {
         url(../img/background/banner1.png);
     background-size: cover;
     padding: 60px 20px;
-   
+
 }
 
 .footer_container {
@@ -208,7 +208,7 @@ footer {
 }
 
 @media screen and (max-width: 820px) {
-   
+
 
     .footer_icons_media img,
     .footer_icons_streaming img {
@@ -300,7 +300,7 @@ footer {
     width: 100%;
     display: flex;
     justify-content: center;
-    
+
 }
 
 .inicio-container {
@@ -313,12 +313,13 @@ footer {
     border-radius: 20px;
     width: 800px;
 }
-.descricao-inicio{
+
+.descricao-inicio {
     text-align: center;
 }
 
 
-.botao-inicio{
+.botao-inicio {
     background-color: #F0F0F0;
     border-radius: 8px;
     color: #0A0A0A;
@@ -327,16 +328,31 @@ footer {
 }
 
 @media screen and (max-width: 700px) {
-.descricao-inicio, .autores{
-    font-size: 13px;
-    text-align: center;
+
+    .descricao-inicio,
+    .autores {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .inicio-container {
+        margin: 10px;
+    }
+
+    .logo {
+        text-align: center;
+    }
 }
-.inicio-container{
-    margin: 10px;
-}
-.logo{
-    text-align: center;
-}
+
+@media screen and (max-width: 336px) {
+
+    .inicio-container h1{
+        font-size: 1.3em;        
+    }
+
+    .inicio-container p{
+        font-size: 1.1em;
+    }
 }
 
 
@@ -566,7 +582,7 @@ footer {
     transition: .2s ease-out;
 }
 
-#full_portfolio_link a:hover{
+#full_portfolio_link a:hover {
     background-color: transparent;
     color: #F0F0F0;
     border: #F0F0F0 dashed 1px;
