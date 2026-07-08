@@ -283,7 +283,7 @@ footer {
 }
 
 /* ==================================================
-   HEADER
+   Inicio
 ================================================== */
 .body-inicio {
     margin: 0;
@@ -307,23 +307,39 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 0;
-    gap: 20px;
+    padding: 10px 20px;
+    gap: 30px;
     border: 1px solid #F0F0F0;
     border-radius: 20px;
     width: 800px;
+}
+.descricao-inicio{
+    text-align: center;
 }
 
 
 .botao-inicio{
     background-color: #F0F0F0;
     border-radius: 8px;
+    color: #0A0A0A;
+
     padding: 15px 20px;
 }
 
-.botao-inicio a{
-    color: #0A0A0A;
+@media screen and (max-width: 700px) {
+.descricao-inicio, .autores{
+    font-size: 13px;
+    text-align: center;
 }
+.inicio-container{
+    margin: 10px;
+}
+.logo{
+    text-align: center;
+}
+}
+
+
 /* ==================================================
    REELS
 ================================================== */
