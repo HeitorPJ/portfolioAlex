@@ -652,6 +652,25 @@ footer {
 }
 
 /* ==================================================
+   CADASTRO
+================================================== */
+
+.form_user{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tabela_form{
+    border: 1px solid white;
+}
+
+
+
+
+/* ==================================================
    RESPONSIVIDADE — PORTFÓLIO & ABOUT
 ================================================== */
 @media screen and (min-width: 922px) and (max-width: 1064px) {

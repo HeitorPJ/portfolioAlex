@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <section class="logo">
+            <a href="index.html">
+                <h1>Guilherme Alexander</h1>
+                <hr>
+                <p>Soundtrack Composer</p>
+            </a>
+        </section>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="homepage.html#REELS">REELS</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="homepage.html#ABOUT">ABOUT</a></li>
+                <li><a href="#">CADASTRAR</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="reels_section">
+
+        <section class="title">
+            <h2 class="Cad_User">Cadastro de Usuário</h2>
+            <div class="title_detail">
+                <hr>
+                <img src="img/icons/losango.png">
+                <hr>
+            </div>
+        </section>
+
+        <form action="mailto:daviunha1706" method="post" class="form_user">
+            <table class="tabela_form">
+                <tr>
+                    <td><label for="nome">Nome:</label></td>
+                    <td><input type="text" name="nome" id="nome" required></td>
+
+                    <td><label for="telefone">Telefone:</label></td>
+                    <td><input type="tel" name="telefone" id="telefone" placeholder="(XX)XXXXX-XXXX"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">E-mail:</label></td>
+                    <td><input type="email" name="email" id="email" placeholder="seuemail@exemplo.com" required></td>
+
+                    <td><label for="estado_civil">Estado Civil:</label></td>
+                    <td><select name="estado_civil" id="estado_civil" required>
+                            <option value="solteiro">Solteiro(a)</option>
+                            <option value="casado">Casado(a)</option>
+                            <option value="divorciado">Divorciado(a)</option>
+                            <option value="viuvo">Viúvo(a)</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>Sexo:</td>
+                    <td>
+                        <label for="sexo">Masculino</label>
+                        <input type="radio" name="masculino" id="masculino">
+                    </td>
+                    <td>
+                        <label for="sexo">Feminino</label>
+                        <input type="radio" name="feminino" id="feminino">
+                    </td>
+                    <td>
+                        <label for="sexo">Outro</label>
+                        <input type="radio" name="outro" id="outro">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td><label for="cidade">Cidade:</label></td>
+                    <td><input type="text" name="cidade" id="cidade" required></td>
+                    <td><label for="rua">Rua:</label></td>
+                    <td><input type="text" name="rua" id="rua" required></td>
+                </tr>
+                <tr>
+                    <td><label for="estado">Estado:</label></td>
+                    <td><input type="text" name="estado" id="estado" required></td>
+                    <td><label for="cep">CEP:</label></td>
+                    <td><input type="text" name="cep" id="cep" placeholder="XXXXX-XXX" required></td>
+                </tr>
+                <tr>
+                    <td><label for="obs">Observações:</label></td>
+                    <td><textarea name="obs" id="obs">Escreva observações aqui</textarea></td>
+                </tr>
+            </table>
+        </form>
+    </main>
+
+    <footer>
+        <section class="footer_container">
+            <section class="footer_icons">
+                <section class="footer_icons_media_container">
+                    <p><b>Social Media</b></p>
+
+                    <div class="footer_icons_media">
+                        <a href="https://x.com/guigagliardo" target="_blank"><img src="img/icons/twitter.png"></a>
+
+                        <a href="https://bsky.app/profile/guigagliardo.com" target="_blank"><img
+                                src="img/icons/bluesky.png"></a>
+                        <a href="https://www.instagram.com/guigagliardo/" target="_blank"><img
+                                src="img/icons/instagram.png"></a>
+                        <a href="https://www.threads.com/@guigagliardo" target="_blank"><img
+                                src="img/icons/threads.png"></a>
+                        <a href="https://www.imdb.com/name/nm15093867/" target="_blank"><img
+                                src="img/icons/imdb.png"></a>
+                        <a href="mailto:gui.alexander1@gmail.com" target="_blank"><img src="img/icons/email.png"></a>
+
+                    </div>
+                </section>
+
+                <section class="footer_icons_streaming_container">
+                    <p><b>Streaming</b></p>
+
+                    <div class="footer_icons_streaming">
+                        <a href="https://open.spotify.com/intl-pt/artist/6qmdcX1FOp1MyO2KYydQZi?si=fPKxZBbnQj6e12UnjeriNQ"
+                            target="_blank"><img src="img/icons/spotify.png"></a></li>
+                        <a href="https://guigagliardo.bandcamp.com/"><img src="img/icons/bandcamp.png"
+                                target="_blank"></a></li>
+                        <a href="https://www.youtube.com/channel/UCgUd8Q9DwUxiONtg1etM6Wg" target="_blank"><img
+                                src="img/icons/youtube.png"></a></li>
+                    </div>
+                </section>
+            </section>
+
+            <div id="footer_division">
+                <hr>
+                <img src="img/icons/losango.png">
+                <hr>
+            </div>
+
+            <section class="footer_email_text">
+                <p><b>Email</b> for contact:</p>
+
+                <p id="footer_email">
+                    <b>gui.alexander1@gmail.com</b>
+                </p>
+            </section>
+        </section>
+    </footer>
+</body>
+
+</html>
