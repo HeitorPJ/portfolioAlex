@@ -30,6 +30,10 @@ a {
     color: #F0F0F0;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
 /* ==================================================
    HEADER
 ================================================== */
@@ -231,6 +235,14 @@ footer {
 .contact_element textarea{
     resize: none;
     height: 5em;
+}
+
+.contact_btn button{
+    border: none;
+    border-radius: .2em;
+    font-size: 1em;
+    padding: .3em .8em;
+    color: #F0F0F0;
 }
 
 @media screen and (max-width: 820px) {
@@ -786,26 +798,23 @@ footer {
     border-radius: .2em;
     color: #F0F0F0;
 }
-.form_buttons button:hover{
-    cursor: pointer;
-}
 
-#btn_confirm{
+.btn_confirm{
     background-color: rgb(120, 179, 33);
 }
-#btn_confirm:hover{
+.btn_confirm:hover{
     background-color: rgba(120, 179, 33, 0.8);
 }
 
-#btn_reset{
+.btn_reset{
     background-color: rgb(235, 87, 87);
 }
-#btn_reset:hover{
+.btn_reset:hover{
     background-color: rgba(235, 87, 87, 0.8);
 }
 
-#btn_confirm,
-#btn_reset{
+.btn_confirm,
+.btn_reset{
     transition: .2s ease-out;
 }
 
