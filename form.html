@@ -20,9 +20,9 @@
 
         <nav class="navbar">
             <ul>
-                <li><a href="#REELS">REELS</a></li>
+                <li><a href="homepage.html">HOME</a></li>
                 <li><a href="portfolio.html">PORTFOLIO</a></li>
-                <li><a href="#ABOUT">ABOUT</a></li>
+                <li><a href="homepage.html#ABOUT">ABOUT</a></li>
                 <li><a href="form.html">LOGIN</a></li>
             </ul>
         </nav>
@@ -43,27 +43,27 @@
                 <ul class="form_list">
                     <li>
                         <label for="name">Name:</label>
-                        <input type="text" name="name">
+                        <input type="text" name="name" required>
                     </li>
                     <li>
                         <label for="street">Street:</label>
-                        <input type="text" name="street">
+                        <input type="text" name="street" required>
                     </li>
                     <li>
                         <label for="city">City:</label>
-                        <input type="text" name="city">
+                        <input type="text" name="city" required>
                     </li>
                     <li>
                         <label for="state">State:</label>
-                        <input type="text" name="state">
+                        <input type="text" name="state" required>
                     </li>
                     <li>
                         <label for="CEP">CEP:</label>
-                        <input type="text" name="CEP">
+                        <input type="text" name="CEP" placeholder="XXXXX-XXX" maxlength="9" required>
                     </li>
                     <li>
                         <label for="telefone">Number:</label>
-                        <input type="tel" name="telefone" id="telefone" placeholder="(XX)XXXXX-XXXX">
+                        <input type="tel" name="telefone" id="telefone" placeholder="(XX)XXXXX-XXXX" maxlength="14" required>
                     </li>
                 </ul>
     
@@ -74,32 +74,32 @@
                     </li>
                     <li>
                         <label for="date_birth" id="date_birth_label">Date of Birth:</label>
-                        <input type="date" name="date_birth">
+                        <input type="date" name="date_birth" required>
                     </li>
                     <li>
                         <label for="CPF">CPF:</label>
-                        <input type="text" name="CPF">
+                        <input type="text" name="CPF" placeholder="XXX.XXX.XXX-XX" maxlength="14" required>
                     </li>
                     <li>
                         <label for="email">Email:</label>
-                        <input type="email" name="email">
+                        <input type="email" name="email" required>
                     </li>
                     <li id="horizontal_li">
                         <div id="form_genre">
                             <p>Genre:</p>
                             <div class="genre_radio_container">
                                 <div class="genre_radio">
-                                    <input type="radio" name="genre" value="male">
+                                    <input type="radio" name="genre" value="male" required>
                                     <label for="genre">Male</label>
                                 </div>
     
                                 <div class="genre_radio">
-                                    <input type="radio" name="genre" value="female">
+                                    <input type="radio" name="genre" value="female" required>
                                     <label for="genre">Female</label>
                                 </div>
     
                                 <div class="genre_radio">
-                                    <input type="radio" name="genre" value="other">
+                                    <input type="radio" name="genre" value="other" required>
                                     <label for="genre">Other</label>
                                 </div>
                             </div>

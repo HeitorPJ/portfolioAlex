@@ -489,7 +489,7 @@ footer {
     object-fit: cover;
     width: 220px;
     height: auto;
-    /* box-shadow: -7px 7px 15px rgba(0, 0, 0, 0.6); */
+    box-shadow: -7px 7px 15px rgba(0, 0, 0, 0.6);
 }
 
 .card legend {
@@ -781,6 +781,10 @@ footer {
 #btn_reset{
     transition: .2s ease-out;
 }
+
+/* ==================================================
+   REPONSIVIDADE - CADASTRO
+================================================== */
 
 @media screen and (max-width: 1130px) {
     .form_list_container {
