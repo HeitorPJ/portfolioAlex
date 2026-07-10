@@ -16,6 +16,7 @@ body {
 h2 {
     font-size: 50px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 h3 {
@@ -270,8 +271,8 @@ footer {
 ================================================== */
 .title {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     padding: 30px;
     margin-bottom: 10px;
 }
@@ -654,20 +655,167 @@ footer {
 /* ==================================================
    CADASTRO
 ================================================== */
-
-.form_user{
-    width: 80%;
+.form_cadastro {
+    border: 2px solid white;
+    border-radius: 1em;
+    padding: 3em 2em;
+    width: 85%;
     margin: auto;
+    font-size: 1.3em;
+}
+
+.form_list_container {
     display: flex;
     justify-content: center;
+    gap: 7%;
+}
+
+.form_list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+}
+
+.form_list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+.form_list input,
+.form_list select {
+    height: 2.5em;
+}
+
+.form_list input,
+.form_list select,
+.txt_area textarea {
+    font-size: 1em;
+}
+
+.form_list label {
+    width: 25%;
+    white-space: nowrap;
+}
+
+.form_list input {
+    width: 80%;
+}
+
+#horizontal_li {
+    justify-content: center;
+    gap: 15%;
+    margin-top: 2em;
+}
+
+#form_genre,
+#marital_status {
+    justify-content: flex-start;
+    gap: 1em;
+}
+
+#form_genre {
+    display: flex;
+    align-items: center;
+}
+
+#form_genre input {
+    width: 1em;
+    height: 1em;
+}
+
+.genre_radio {
+    white-space: nowrap;
+}
+
+.txt_area {
+    text-align: center;
+    margin-top: 3em;
+    display: flex;
     flex-direction: column;
 }
 
-.tabela_form{
-    border: 1px solid white;
+.txt_area textarea {
+    resize: none;
+    width: 60%;
+    height: 10em;
+    margin: auto;
 }
 
+.form_buttons{
+    text-align: center;
+    margin-top: 2em;
+}
 
+.form_buttons button{
+    width: 7em;
+    height: 3em;
+    font-size: 1em;
+    border: none;
+    border-radius: .2em;
+    color: #F0F0F0;
+}
+.form_buttons button:hover{
+    cursor: pointer;
+}
+
+#btn_confirm{
+    background-color: rgb(120, 179, 33);
+}
+#btn_confirm:hover{
+    background-color: rgba(120, 179, 33, 0.8);
+}
+
+#btn_reset{
+    background-color: rgb(235, 87, 87);
+}
+#btn_reset:hover{
+    background-color: rgba(235, 87, 87, 0.8);
+}
+
+#btn_confirm,
+#btn_reset{
+    transition: .2s ease-out;
+}
+
+@media screen and (max-width: 1130px) {
+    .form_list_container {
+        flex-direction: column;
+        gap: 1em;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .form_cadastro {
+        padding: 3em 1em;
+        font-size: 1em;
+    }
+
+    .form_list_container {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .txt_area textarea {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    #horizontal_li {
+        flex-direction: column;
+        margin-top: 0;
+        gap: 1em;
+    }
+
+    #date_birth_label {
+        font-size: .85em;
+    }
+}
 
 
 /* ==================================================

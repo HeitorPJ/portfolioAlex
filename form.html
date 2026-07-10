@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <header>
+        <section class="logo">
+            <a href="index.html">
+                <h1>Guilherme Alexander</h1>
+                <hr>
+                <p>Soundtrack Composer</p>
+            </a>
+        </section>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#REELS">REELS</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="#ABOUT">ABOUT</a></li>
+                <li><a href="form.html">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="title">
+            <h2 id="LOGIN">LOGIN</h2>
+            <div class="title_detail">
+                <hr>
+                <img src="img/icons/losango.png">
+                <hr>
+            </div>
+        </section>
+
+        <form action="" class="form_cadastro">
+            <div class="form_list_container">
+                <ul class="form_list">
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name">
+                    </li>
+                    <li>
+                        <label for="street">Street:</label>
+                        <input type="text" name="street">
+                    </li>
+                    <li>
+                        <label for="city">City:</label>
+                        <input type="text" name="city">
+                    </li>
+                    <li>
+                        <label for="state">State:</label>
+                        <input type="text" name="state">
+                    </li>
+                    <li>
+                        <label for="CEP">CEP:</label>
+                        <input type="text" name="CEP">
+                    </li>
+                    <li>
+                        <label for="telefone">Number:</label>
+                        <input type="tel" name="telefone" id="telefone" placeholder="(XX)XXXXX-XXXX">
+                    </li>
+                </ul>
+    
+                <ul class="form_list">
+                    <li>
+                        <label for="profession">Profession:</label>
+                        <input type="text" name="profession">
+                    </li>
+                    <li>
+                        <label for="date_birth" id="date_birth_label">Date of Birth:</label>
+                        <input type="date" name="date_birth">
+                    </li>
+                    <li>
+                        <label for="CPF">CPF:</label>
+                        <input type="text" name="CPF">
+                    </li>
+                    <li>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email">
+                    </li>
+                    <li id="horizontal_li">
+                        <div id="form_genre">
+                            <p>Genre:</p>
+                            <div class="genre_radio_container">
+                                <div class="genre_radio">
+                                    <input type="radio" name="genre" value="male">
+                                    <label for="genre">Male</label>
+                                </div>
+    
+                                <div class="genre_radio">
+                                    <input type="radio" name="genre" value="female">
+                                    <label for="genre">Female</label>
+                                </div>
+    
+                                <div class="genre_radio">
+                                    <input type="radio" name="genre" value="other">
+                                    <label for="genre">Other</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="marital_status">
+                            <label for="estado_civil">Marital Status:</label>
+                            <select name="estado_civil" id="estado_civil" required>
+                                <option value="solteiro">Single</option>
+                                <option value="casado">Married</option>
+                                <option value="divorciado">Divorced</option>
+                                <option value="viuvo">widowed</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="txt_area">
+                <label for="OBS">Notes:</label>
+                <textarea name="OBS" id="OBS" placeholder="Write some notes or questions here"></textarea>
+            </div>
+
+            <div class="form_buttons">
+                <button type="submit" id="btn_confirm">Confirm</button>
+                <button type="reset" id="btn_reset">Reset</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <section class="footer_container">
+            <section class="footer_icons">
+                <section class="footer_icons_media_container">
+                    <p><b>Social Media</b></p>
+
+                    <div class="footer_icons_media">
+                        <a href="https://x.com/guigagliardo" target="_blank"><img src="img/icons/twitter.png"></a>
+                        <a href="https://bsky.app/profile/guigagliardo.com" target="_blank"><img
+                                src="img/icons/bluesky.png"></a>
+                        <a href="https://www.instagram.com/guigagliardo/" target="_blank"><img
+                                src="img/icons/instagram.png"></a>
+                        <a href="https://www.threads.com/@guigagliardo" target="_blank"><img
+                                src="img/icons/threads.png"></a>
+                        <a href="https://www.imdb.com/name/nm15093867/" target="_blank"><img
+                                src="img/icons/imdb.png"></a>
+                        <a href="mailto:gui.alexander1@gmail.com" target="_blank"><img src="img/icons/email.png"></a>
+
+                    </div>
+                </section>
+
+                <section class="footer_icons_streaming_container">
+                    <p><b>Streaming</b></p>
+
+                    <div class="footer_icons_streaming">
+                        <a href="https://open.spotify.com/intl-pt/artist/6qmdcX1FOp1MyO2KYydQZi?si=fPKxZBbnQj6e12UnjeriNQ"
+                            target="_blank"><img src="img/icons/spotify.png"></a></li>
+                        <a href="https://guigagliardo.bandcamp.com/"><img src="img/icons/bandcamp.png"
+                                target="_blank"></a></li>
+                        <a href="https://www.youtube.com/channel/UCgUd8Q9DwUxiONtg1etM6Wg" target="_blank"><img
+                                src="img/icons/youtube.png"></a></li>
+                    </div>
+                </section>
+            </section>
+
+            <div id="footer_division">
+                <hr>
+                <img src="img/icons/losango.png">
+                <hr>
+            </div>
+
+            <section class="footer_email_text">
+                <p><b>Email</b> for contact:</p>
+
+                <p id="footer_email">
+                    <b>gui.alexander1@gmail.com</b>
+                </p>
+            </section>
+        </section>
+    </footer>
+</body>
+
+</html>
